@@ -16,8 +16,12 @@ ADD_EXECUTABLE(bigger_area_calculator
 )
 
 ADD_EXECUTABLE(c-echo
-    main.cpp
+    main2.cpp
 )
+
+ADD_EXECUTABLE(c-echo-count
+    main.cpp
+}
 
 ADD_EXECUTABLE(test
     test.cpp
