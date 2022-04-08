@@ -11,3 +11,4 @@ std::string echo(int length, char** chars) {
 
     return ret;
 }
+
