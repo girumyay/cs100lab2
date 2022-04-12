@@ -1,7 +1,8 @@
 
 #include "c-echo.h"
+using namespace std;
 
 int main(int argv, char** argc) {
-    std::cout << "Count of output: " << count(echo(argv,argc)) << std::endl;
+    cout << "Count of output: " << count(echo(argv,argc)) << endl;
 }
 
