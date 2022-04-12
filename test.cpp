@@ -28,6 +28,21 @@ TEST(CountTest, ManySpaces) {
     EXPECT_EQ(5, count(test_str));
 }
 
+TEST(EchoTest, OneChar) {
+    char* test_val[2]; test_val[0] = "./c-echo"; test_val[1] = "a";
+    EXPECT_EQ("a", echo(2, test_val));
+}
+
+TEST(EchoTest, Num) {
+    char* test_val[2]; test_val[0] = "./c-echo"; test_val[1] = "1"; 
+    EXPECT_EQ("1", echo(2, test_val));
+} 
+
+TEST(EchoTest, SpecChar) {
+    char* test_val[3]; test_val[0] = "./c-echo"; test_val[1] = "@"; test_val[2] = "#";
+    EXPECT_EQ("@ #", echo(3, test_val));
+}
+
 int main(int argc, char **argv) {
     ::testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
